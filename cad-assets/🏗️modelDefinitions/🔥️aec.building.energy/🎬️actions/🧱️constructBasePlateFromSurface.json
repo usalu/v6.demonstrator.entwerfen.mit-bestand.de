@@ -1,0 +1,20 @@
+{
+  "schema": "spatial.action",
+  "id": "energy.energy.constructBasePlateFromSurface",
+  "version": "1.0.0",
+  "label": "Construct Base Plate From Surface",
+  "steps": [
+    {
+      "operation": "kernel.call",
+      "function": "spatial.action.capability",
+      "assignTo": "result"
+    },
+    {
+      "operation": "return",
+      "result": {
+        "kind": "var",
+        "name": "result"
+      }
+    }
+  ]
+}

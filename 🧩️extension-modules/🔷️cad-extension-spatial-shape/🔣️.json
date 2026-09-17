@@ -1,0 +1,51 @@
+{
+  "contributions": {
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "cad-play",
+          "computersJson": "{\"modelDefinitionIds\":[\"spatial.shape\"],\"statComputers\":[\"spatial.shape.geometry\"],\"propertyComputers\":[\"spatial.shape.volume\"],\"importProfiles\":[],\"transformationAppliers\":[]}",
+          "iconId": "box",
+          "label": "Spatial Shape",
+          "moduleId": "spatial-shape"
+        },
+        "topic": "cad.computer"
+      }
+    ]
+  },
+  "descriptorVersion": 1,
+  "execution": "declarative",
+  "executionProtocol": {
+    "appChannelVersion": 17
+  },
+  "hashes": {
+    "coreWasmSha256": "ae8e0da6bd3be00abfbaeadb4d15b84d28dab26b126c8c02ef0458f9202774ca",
+    "descriptorSha256": "17c088beaedb2434cc179a4256a3a3340c9e16c28dd5851a06e6582e85008a4c",
+    "wasmSha256": "5a7b896802075a9f6d5a6d14572d1d586ee8c923b1b09ff5b9fee83e617b11bf"
+  },
+  "manifest": {
+    "apps": [],
+    "artifactKinds": [],
+    "capabilities": [],
+    "commands": [],
+    "examples": [],
+    "label": "CAD Spatial Shape",
+    "pluginId": "cad-extension-spatial-shape",
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "cad-play",
+          "computersJson": "{\"modelDefinitionIds\":[\"spatial.shape\"],\"statComputers\":[\"spatial.shape.geometry\"],\"propertyComputers\":[\"spatial.shape.volume\"],\"importProfiles\":[],\"transformationAppliers\":[]}",
+          "iconId": "box",
+          "label": "Spatial Shape",
+          "moduleId": "spatial-shape"
+        },
+        "topic": "cad.computer"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "packageId": "",
+  "quotas": {},
+  "role": "extension"
+}

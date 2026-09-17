@@ -1,0 +1,71 @@
+{
+  "contributions": {
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "flow-play",
+          "extensionId": "text",
+          "iconId": "text",
+          "label": "Text",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"text\",\"name\":\"Text\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"text.concat\",\"extension\":\"text\",\"name\":\"Concat\",\"abbreviation\":\"Concat\",\"icon\":\"emoji:📝️\",\"summary\":\"Joins two text values\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"text\",\"fullName\":\"JoinedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"text.upper\",\"extension\":\"text\",\"name\":\"Upper\",\"abbreviation\":\"Upper\",\"icon\":\"emoji:📝️\",\"summary\":\"Uppercases text\",\"inputs\":[{\"code\":\"TE\",\"abbreviation\":\"tex\",\"name\":\"text\",\"fullName\":\"Text\",\"operators\":[\"text.upper\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"textOut\",\"fullName\":\"UppercasedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"text.showHelp\",\"title\":\"Text: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      },
+      {
+        "payload": {
+          "appId": "procedural3d-play",
+          "extensionId": "text",
+          "iconId": "text",
+          "label": "Text",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"text\",\"name\":\"Text\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"text.concat\",\"extension\":\"text\",\"name\":\"Concat\",\"abbreviation\":\"Concat\",\"icon\":\"emoji:📝️\",\"summary\":\"Joins two text values\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"text\",\"fullName\":\"JoinedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"text.upper\",\"extension\":\"text\",\"name\":\"Upper\",\"abbreviation\":\"Upper\",\"icon\":\"emoji:📝️\",\"summary\":\"Uppercases text\",\"inputs\":[{\"code\":\"TE\",\"abbreviation\":\"tex\",\"name\":\"text\",\"fullName\":\"Text\",\"operators\":[\"text.upper\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"textOut\",\"fullName\":\"UppercasedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"text.showHelp\",\"title\":\"Text: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      }
+    ]
+  },
+  "descriptorVersion": 1,
+  "execution": "linked",
+  "executionProtocol": {
+    "appChannelVersion": 17
+  },
+  "hashes": {
+    "coreWasmSha256": "167b62d75ff70acb97742cbbbcd7512c8750058a2b738ab5b7cb1a19f651ad90",
+    "descriptorSha256": "118f8f0abee31a9c3d6ca15d7c580e8390c7f8fdf8fa90a22262e7c4a2bcfa79",
+    "wasmSha256": "12003ec947de2a7710a4502bbd3251e9c71092c7a7a5d82e86c3252d1dea0d0b"
+  },
+  "manifest": {
+    "apps": [],
+    "artifactKinds": [],
+    "capabilities": [],
+    "commands": [],
+    "examples": [],
+    "label": "Text",
+    "pluginId": "flow-extension-text",
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "flow-play",
+          "extensionId": "text",
+          "iconId": "text",
+          "label": "Text",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"text\",\"name\":\"Text\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"text.concat\",\"extension\":\"text\",\"name\":\"Concat\",\"abbreviation\":\"Concat\",\"icon\":\"emoji:📝️\",\"summary\":\"Joins two text values\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"text\",\"fullName\":\"JoinedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"text.upper\",\"extension\":\"text\",\"name\":\"Upper\",\"abbreviation\":\"Upper\",\"icon\":\"emoji:📝️\",\"summary\":\"Uppercases text\",\"inputs\":[{\"code\":\"TE\",\"abbreviation\":\"tex\",\"name\":\"text\",\"fullName\":\"Text\",\"operators\":[\"text.upper\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"textOut\",\"fullName\":\"UppercasedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"text.showHelp\",\"title\":\"Text: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      },
+      {
+        "payload": {
+          "appId": "procedural3d-play",
+          "extensionId": "text",
+          "iconId": "text",
+          "label": "Text",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"text\",\"name\":\"Text\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"text.concat\",\"extension\":\"text\",\"name\":\"Concat\",\"abbreviation\":\"Concat\",\"icon\":\"emoji:📝️\",\"summary\":\"Joins two text values\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"text.concat\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"text\",\"fullName\":\"JoinedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"text.upper\",\"extension\":\"text\",\"name\":\"Upper\",\"abbreviation\":\"Upper\",\"icon\":\"emoji:📝️\",\"summary\":\"Uppercases text\",\"inputs\":[{\"code\":\"TE\",\"abbreviation\":\"tex\",\"name\":\"text\",\"fullName\":\"Text\",\"operators\":[\"text.upper\"],\"valueTypes\":[\"text\"],\"default\":{\"$schema\":\"text\",\"value\":\"\"},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"T\",\"abbreviation\":\"Txt\",\"name\":\"textOut\",\"fullName\":\"UppercasedText\",\"operators\":[\"text.concat\",\"text.upper\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"text.showHelp\",\"title\":\"Text: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "packageId": "",
+  "quotas": {},
+  "role": "extension"
+}

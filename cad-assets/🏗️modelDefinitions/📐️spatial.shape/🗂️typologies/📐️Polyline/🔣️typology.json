@@ -1,0 +1,10 @@
+{
+  "schema": "spatial.typology",
+  "id": "spatial.shape.curve.polyline",
+  "version": "1.0.0",
+  "label": "Polyline",
+  "description": "Typology produced by curve.polyline.",
+  "actions": ["curve.polyline"],
+  "interactions": ["curve.polyline"],
+  "primitiveKinds": ["curve"]
+}

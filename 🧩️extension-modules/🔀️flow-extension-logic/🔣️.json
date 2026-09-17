@@ -1,0 +1,71 @@
+{
+  "contributions": {
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "flow-play",
+          "extensionId": "logic",
+          "iconId": "logic",
+          "label": "Logic",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"logic\",\"name\":\"Logic\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"logic.greater\",\"extension\":\"logic\",\"name\":\"Greater\",\"abbreviation\":\"Greater\",\"icon\":\"emoji:🔀️\",\"summary\":\"True when a > b\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"boolean\",\"fullName\":\"Greater\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"logic.not\",\"extension\":\"logic\",\"name\":\"Not\",\"abbreviation\":\"Not\",\"icon\":\"emoji:🔀️\",\"summary\":\"Inverts a boolean\",\"inputs\":[{\"code\":\"BO\",\"abbreviation\":\"boo\",\"name\":\"boolean\",\"fullName\":\"Boolean\",\"operators\":[\"logic.not\"],\"valueTypes\":[\"boolean\"],\"default\":{\"$schema\":\"boolean\",\"value\":false},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"booleanOut\",\"fullName\":\"Negated\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"logic.showHelp\",\"title\":\"Logic: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      },
+      {
+        "payload": {
+          "appId": "procedural3d-play",
+          "extensionId": "logic",
+          "iconId": "logic",
+          "label": "Logic",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"logic\",\"name\":\"Logic\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"logic.greater\",\"extension\":\"logic\",\"name\":\"Greater\",\"abbreviation\":\"Greater\",\"icon\":\"emoji:🔀️\",\"summary\":\"True when a > b\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"boolean\",\"fullName\":\"Greater\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"logic.not\",\"extension\":\"logic\",\"name\":\"Not\",\"abbreviation\":\"Not\",\"icon\":\"emoji:🔀️\",\"summary\":\"Inverts a boolean\",\"inputs\":[{\"code\":\"BO\",\"abbreviation\":\"boo\",\"name\":\"boolean\",\"fullName\":\"Boolean\",\"operators\":[\"logic.not\"],\"valueTypes\":[\"boolean\"],\"default\":{\"$schema\":\"boolean\",\"value\":false},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"booleanOut\",\"fullName\":\"Negated\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"logic.showHelp\",\"title\":\"Logic: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      }
+    ]
+  },
+  "descriptorVersion": 1,
+  "execution": "linked",
+  "executionProtocol": {
+    "appChannelVersion": 17
+  },
+  "hashes": {
+    "coreWasmSha256": "087fb7c9a65fc1e0658481091d3ef3050cd57030a01bbcca5224f77b5db9a547",
+    "descriptorSha256": "b9b27e20593d439a7e083c870c0892f285d5cdc4c0e5c673751430ad10b5fbeb",
+    "wasmSha256": "a37569d763d667b4a76de5c85325e1a6a9ceffd3dd37fadde8333252d1e6e126"
+  },
+  "manifest": {
+    "apps": [],
+    "artifactKinds": [],
+    "capabilities": [],
+    "commands": [],
+    "examples": [],
+    "label": "Logic",
+    "pluginId": "flow-extension-logic",
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "flow-play",
+          "extensionId": "logic",
+          "iconId": "logic",
+          "label": "Logic",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"logic\",\"name\":\"Logic\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"logic.greater\",\"extension\":\"logic\",\"name\":\"Greater\",\"abbreviation\":\"Greater\",\"icon\":\"emoji:🔀️\",\"summary\":\"True when a > b\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"boolean\",\"fullName\":\"Greater\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"logic.not\",\"extension\":\"logic\",\"name\":\"Not\",\"abbreviation\":\"Not\",\"icon\":\"emoji:🔀️\",\"summary\":\"Inverts a boolean\",\"inputs\":[{\"code\":\"BO\",\"abbreviation\":\"boo\",\"name\":\"boolean\",\"fullName\":\"Boolean\",\"operators\":[\"logic.not\"],\"valueTypes\":[\"boolean\"],\"default\":{\"$schema\":\"boolean\",\"value\":false},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"booleanOut\",\"fullName\":\"Negated\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"logic.showHelp\",\"title\":\"Logic: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      },
+      {
+        "payload": {
+          "appId": "procedural3d-play",
+          "extensionId": "logic",
+          "iconId": "logic",
+          "label": "Logic",
+          "manifestJson": "{\"schema\":\"flow.extension\",\"id\":\"logic\",\"name\":\"Logic\",\"version\":\"0.1.0\",\"activationEvents\":[\"onStartup\"],\"contributes\":{\"schemas\":[],\"operators\":[{\"id\":\"logic.greater\",\"extension\":\"logic\",\"name\":\"Greater\",\"abbreviation\":\"Greater\",\"icon\":\"emoji:🔀️\",\"summary\":\"True when a > b\",\"inputs\":[{\"code\":\"A\",\"abbreviation\":\"a\",\"name\":\"a\",\"fullName\":\"A\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"},{\"code\":\"B\",\"abbreviation\":\"b\",\"name\":\"b\",\"fullName\":\"B\",\"operators\":[\"logic.greater\"],\"valueTypes\":[\"number\"],\"default\":{\"$schema\":\"number\",\"value\":0.0},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"boolean\",\"fullName\":\"Greater\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]},{\"id\":\"logic.not\",\"extension\":\"logic\",\"name\":\"Not\",\"abbreviation\":\"Not\",\"icon\":\"emoji:🔀️\",\"summary\":\"Inverts a boolean\",\"inputs\":[{\"code\":\"BO\",\"abbreviation\":\"boo\",\"name\":\"boolean\",\"fullName\":\"Boolean\",\"operators\":[\"logic.not\"],\"valueTypes\":[\"boolean\"],\"default\":{\"$schema\":\"boolean\",\"value\":false},\"label\":null,\"cardinality\":\"!\"}],\"outputs\":[{\"code\":\"B\",\"abbreviation\":\"Boo\",\"name\":\"booleanOut\",\"fullName\":\"Negated\",\"operators\":[\"logic.not\"],\"valueTypes\":[],\"default\":null,\"label\":null,\"cardinality\":\"!\"}],\"variadicInput\":null,\"variadicOutput\":null,\"group\":[]}],\"widgets\":[],\"commands\":[{\"id\":\"logic.showHelp\",\"title\":\"Logic: Show Help\"}],\"settings\":[]}}"
+        },
+        "topic": "flow.extension"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "packageId": "",
+  "quotas": {},
+  "role": "extension"
+}

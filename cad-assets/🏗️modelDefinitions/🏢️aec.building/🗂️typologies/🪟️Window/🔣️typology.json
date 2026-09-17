@@ -1,0 +1,15 @@
+{
+  "schema": "spatial.typology",
+  "id": "building.building.window",
+  "version": "1.0.0",
+  "label": "Window",
+  "description": "Glazed opening element.",
+  "primitiveKinds": ["surface"],
+  "style": {
+    "color": "#87CEEB",
+    "edgeColor": "#4A8FA8",
+    "opacity": 0.55
+  },
+  "actions": ["building.building.placeWindowFrom2PointsAndHeight"],
+  "interactions": ["building.building.placeWindow"]
+}

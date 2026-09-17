@@ -1,0 +1,10 @@
+{
+  "schema": "spatial.typology",
+  "id": "spatial.shape.solid.sphere",
+  "version": "1.0.0",
+  "label": "Sphere",
+  "description": "Typology produced by solid.sphere.",
+  "actions": ["command.finish"],
+  "interactions": ["solid.sphere"],
+  "primitiveKinds": ["solid"]
+}

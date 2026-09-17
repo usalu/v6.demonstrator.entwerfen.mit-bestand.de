@@ -1,0 +1,494 @@
+{
+  "schema": "spatial.interaction",
+  "id": "building.building.placeStair",
+  "version": "1.0.0",
+  "label": "Place Stair",
+  "key": "t",
+  "interaction": {
+    "spatialGroundPick": true,
+    "pickDisabledStates": [
+      "idle",
+      "committed"
+    ],
+    "groundPointerMoveStates": [
+      "first_point",
+      "second_point"
+    ],
+    "heightDragStates": [],
+    "verticalRodStates": [],
+    "heightConfirmState": null
+  },
+  "machine": {
+    "initial": "idle",
+    "states": [
+      {
+        "name": "idle",
+        "on": [
+          {
+            "event": "start",
+            "transitions": [
+              {
+                "target": "first_point",
+                "key": "s",
+                "label": "Start",
+                "effects": [
+                  {
+                    "mutation": "assign",
+                    "target": {
+                      "root": "context",
+                      "segments": [
+                        {
+                          "kind": "field",
+                          "name": "points"
+                        }
+                      ]
+                    },
+                    "value": {
+                      "kind": "const",
+                      "value": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "first_point",
+        "on": [
+          {
+            "event": "pointer.move",
+            "transitions": [
+              {
+                "transient": true,
+                "effects": [
+                  {
+                    "mutation": "assign",
+                    "target": {
+                      "root": "context",
+                      "segments": [
+                        {
+                          "kind": "field",
+                          "name": "cursor"
+                        }
+                      ]
+                    },
+                    "value": {
+                      "kind": "path",
+                      "root": "event",
+                      "segments": [
+                        {
+                          "kind": "field",
+                          "name": "point"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "event": "pointer.down",
+            "transitions": [
+              {
+                "target": "second_point",
+                "label": "First Corner",
+                "effects": [
+                  {
+                    "mutation": "action",
+                    "action": "command.addPoint",
+                    "params": {
+                      "field": {
+                        "kind": "const",
+                        "value": "points"
+                      },
+                      "key": {
+                        "kind": "const",
+                        "value": "pointA"
+                      },
+                      "point": {
+                        "kind": "path",
+                        "root": "event",
+                        "segments": [
+                          {
+                            "kind": "field",
+                            "name": "point"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "second_point",
+        "on": [
+          {
+            "event": "pointer.move",
+            "transitions": [
+              {
+                "transient": true,
+                "effects": [
+                  {
+                    "mutation": "assign",
+                    "target": {
+                      "root": "context",
+                      "segments": [
+                        {
+                          "kind": "field",
+                          "name": "cursor"
+                        }
+                      ]
+                    },
+                    "value": {
+                      "kind": "path",
+                      "root": "event",
+                      "segments": [
+                        {
+                          "kind": "field",
+                          "name": "point"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "event": "pointer.down",
+            "transitions": [
+              {
+                "target": "committed",
+                "label": "Finish",
+                "effects": [
+                  {
+                    "mutation": "action",
+                    "action": "command.addPoint",
+                    "params": {
+                      "field": {
+                        "kind": "const",
+                        "value": "points"
+                      },
+                      "key": {
+                        "kind": "const",
+                        "value": "pointB"
+                      },
+                      "point": {
+                        "kind": "path",
+                        "root": "event",
+                        "segments": [
+                          {
+                            "kind": "field",
+                            "name": "point"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "mutation": "assign",
+                    "target": {
+                      "root": "context",
+                      "segments": [
+                        {
+                          "kind": "field",
+                          "name": "height"
+                        }
+                      ]
+                    },
+                    "value": {
+                      "kind": "const",
+                      "value": 2.7
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "committed",
+        "final": true
+      }
+    ]
+  },
+  "display": {
+    "states": [
+      {
+        "state": "first_point",
+        "items": [
+          {
+            "kind": "label",
+            "id": "hint-first",
+            "role": "prompt",
+            "text": "Place Stair: click first footprint corner",
+            "position": {
+              "kind": "const",
+              "value": [
+                0,
+                0.25,
+                1.55
+              ]
+            }
+          },
+          {
+            "kind": "point",
+            "id": "cursor",
+            "role": "cursor",
+            "position": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "cursor"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "state": "second_point",
+        "items": [
+          {
+            "kind": "label",
+            "id": "hint-second",
+            "role": "prompt",
+            "text": "Place Stair: click opposite footprint corner",
+            "position": {
+              "kind": "const",
+              "value": [
+                0,
+                0.25,
+                1.55
+              ]
+            }
+          },
+          {
+            "kind": "point",
+            "id": "anchor-a",
+            "role": "anchor",
+            "position": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "points"
+                },
+                {
+                  "kind": "field",
+                  "name": "pointA"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "point",
+            "id": "cursor",
+            "role": "cursor",
+            "position": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "cursor"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "segment",
+            "id": "footprint-rubber",
+            "role": "preview",
+            "from": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "points"
+                },
+                {
+                  "kind": "field",
+                  "name": "pointA"
+                }
+              ]
+            },
+            "to": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "cursor"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "box-preview",
+            "id": "preview",
+            "role": "preview",
+            "cornerA": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "points"
+                },
+                {
+                  "kind": "field",
+                  "name": "pointA"
+                }
+              ]
+            },
+            "cornerB": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "cursor"
+                }
+              ]
+            },
+            "height": {
+              "kind": "const",
+              "value": 2.7
+            }
+          }
+        ]
+      },
+      {
+        "state": "committed",
+        "items": [
+          {
+            "kind": "label",
+            "id": "hint-commit",
+            "role": "prompt",
+            "text": "Place Stair: Accept to create",
+            "position": {
+              "kind": "const",
+              "value": [
+                0,
+                0.2,
+                1.55
+              ]
+            }
+          },
+          {
+            "kind": "box-preview",
+            "id": "preview-final",
+            "role": "preview",
+            "cornerA": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "points"
+                },
+                {
+                  "kind": "field",
+                  "name": "pointA"
+                }
+              ]
+            },
+            "cornerB": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "points"
+                },
+                {
+                  "kind": "field",
+                  "name": "pointB"
+                }
+              ]
+            },
+            "height": {
+              "kind": "path",
+              "root": "context",
+              "segments": [
+                {
+                  "kind": "field",
+                  "name": "height"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "commit": {
+    "fromStates": [
+      "committed"
+    ],
+    "operation": {
+      "kind": "action",
+      "action": "building.building.placeStairFrom2PointsAndHeight",
+      "params": {
+        "typology": {
+          "kind": "const",
+          "value": "building.building.stair"
+        },
+        "pointA": {
+          "kind": "path",
+          "root": "context",
+          "segments": [
+            {
+              "kind": "field",
+              "name": "points"
+            },
+            {
+              "kind": "field",
+              "name": "pointA"
+            }
+          ]
+        },
+        "pointB": {
+          "kind": "path",
+          "root": "context",
+          "segments": [
+            {
+              "kind": "field",
+              "name": "points"
+            },
+            {
+              "kind": "field",
+              "name": "pointB"
+            }
+          ]
+        },
+        "height": {
+          "kind": "path",
+          "root": "context",
+          "segments": [
+            {
+              "kind": "field",
+              "name": "height"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "produces": {
+    "typology": "building.building.stair"
+  }
+}

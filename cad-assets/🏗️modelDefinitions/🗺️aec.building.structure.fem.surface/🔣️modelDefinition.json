@@ -1,0 +1,8 @@
+{
+  "schema": "spatial.modelDefinition",
+  "id": "aec.building.structure.fem.surface",
+  "version": "1.0.0",
+  "label": "Building Structure FEM Surface",
+  "description": "Surface finite element structural model definition assets.",
+  "kinds": ["transformation", "typology"]
+}

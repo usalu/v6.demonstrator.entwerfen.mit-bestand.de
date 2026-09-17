@@ -1,0 +1,15 @@
+{
+  "schema": "spatial.typology",
+  "id": "building.building.foundation",
+  "version": "1.0.0",
+  "label": "Foundation",
+  "description": "Substructure bearing element.",
+  "primitiveKinds": ["surface"],
+  "style": {
+    "color": "#8B6914",
+    "edgeColor": "#5C460D",
+    "opacity": 0.88
+  },
+  "actions": ["building.building.placeFoundationFrom2PointsAndHeight"],
+  "interactions": ["building.building.placeFoundation"]
+}

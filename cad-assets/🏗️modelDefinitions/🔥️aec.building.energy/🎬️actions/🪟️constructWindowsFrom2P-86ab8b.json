@@ -1,0 +1,20 @@
+{
+  "schema": "spatial.action",
+  "id": "energy.energy.constructWindowsFrom2PointsAndHeight",
+  "version": "1.0.0",
+  "label": "Construct Windows From 2 Points And Height",
+  "steps": [
+    {
+      "operation": "kernel.call",
+      "function": "spatial.action.capability",
+      "assignTo": "result"
+    },
+    {
+      "operation": "return",
+      "result": {
+        "kind": "var",
+        "name": "result"
+      }
+    }
+  ]
+}

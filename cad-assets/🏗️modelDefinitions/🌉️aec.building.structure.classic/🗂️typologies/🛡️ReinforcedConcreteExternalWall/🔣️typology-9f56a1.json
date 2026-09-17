@@ -1,0 +1,25 @@
+{
+  "schema": "spatial.typology",
+  "id": "structure.structure.reinforcedconcreteexternalwall",
+  "version": "1.0.0",
+  "label": "Reinforced Concrete External Wall",
+  "actions": [
+    "structure.structure.constructReinforcedConcreteExternalWallFrom2PointsAndHeight",
+    "structure.structure.constructReinforcedConcreteExternalWallFromCurveAndHeight",
+    "structure.structure.constructReinforcedConcreteExternalWallFromSurface"
+  ],
+  "interactions": ["structure.structure.constructReinforcedConcreteExternalWall"],
+  "primitiveKinds": ["surface"],
+  "style": {
+    "color": "#6B8E9F",
+    "edgeColor": "#3D5560",
+    "opacity": 0.76,
+    "pattern": {
+      "kind": "crosshatch",
+      "direction": 45,
+      "spacing": 0.32,
+      "lineWidth": 0.03,
+      "color": "#2A3D45"
+    }
+  }
+}

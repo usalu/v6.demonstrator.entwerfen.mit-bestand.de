@@ -1,0 +1,40 @@
+{
+  "schema": "spatial.action",
+  "id": "selection.selectVertices",
+  "version": "1.0.0",
+  "label": "SelectVertices",
+  "steps": [
+    {
+      "operation": "kernel.call",
+      "function": "spatial.selection.apply",
+      "args": {
+        "operation": {
+          "kind": "const",
+          "value": "selectKinds"
+        },
+        "seedTargets": {
+          "kind": "path",
+          "root": "params",
+          "segments": [
+            {
+              "kind": "field",
+              "name": "seedTargets"
+            }
+          ]
+        },
+        "kinds": {
+          "kind": "const",
+          "value": ["vertex"]
+        }
+      },
+      "assignTo": "result"
+    },
+    {
+      "operation": "return",
+      "result": {
+        "kind": "var",
+        "name": "result"
+      }
+    }
+  ]
+}

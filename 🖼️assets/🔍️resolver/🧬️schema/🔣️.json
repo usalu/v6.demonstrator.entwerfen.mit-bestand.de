@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://json.schemas.assets.semio-tech.com/framework/assets/resolver/schema.json",
+  "title": "Assets Resolver Schema Module",
+  "$defs": {
+    "Delivery": {
+      "type": "object",
+      "required": [
+        "$schema",
+        "version",
+        "directoryName"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "const": "./🧬️schema/🔣️.json"
+        },
+        "version": {
+          "const": 1
+        },
+        "directoryName": {
+          "const": "🖼️assets"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/$defs/Delivery"
+    }
+  ]
+}

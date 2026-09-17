@@ -1,0 +1,15 @@
+{
+  "schema": "spatial.typology",
+  "id": "building.building.slab",
+  "version": "1.0.0",
+  "label": "Slab",
+  "description": "Horizontal planar floor or deck element.",
+  "primitiveKinds": ["surface"],
+  "style": {
+    "color": "#BDBDBD",
+    "edgeColor": "#757575",
+    "opacity": 0.78
+  },
+  "actions": ["building.building.placeSlabFrom2PointsAndHeight"],
+  "interactions": ["building.building.placeSlab"]
+}

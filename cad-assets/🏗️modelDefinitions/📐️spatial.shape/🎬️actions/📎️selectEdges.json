@@ -1,0 +1,40 @@
+{
+  "schema": "spatial.action",
+  "id": "selection.selectEdges",
+  "version": "1.0.0",
+  "label": "SelectEdges",
+  "steps": [
+    {
+      "operation": "kernel.call",
+      "function": "spatial.selection.apply",
+      "args": {
+        "operation": {
+          "kind": "const",
+          "value": "selectKinds"
+        },
+        "seedTargets": {
+          "kind": "path",
+          "root": "params",
+          "segments": [
+            {
+              "kind": "field",
+              "name": "seedTargets"
+            }
+          ]
+        },
+        "kinds": {
+          "kind": "const",
+          "value": ["edge"]
+        }
+      },
+      "assignTo": "result"
+    },
+    {
+      "operation": "return",
+      "result": {
+        "kind": "var",
+        "name": "result"
+      }
+    }
+  ]
+}

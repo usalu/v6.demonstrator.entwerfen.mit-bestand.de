@@ -1,0 +1,51 @@
+{
+  "contributions": {
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "cad-play",
+          "computersJson": "{\"modelDefinitionIds\":[\"aec.building.structure\",\"aec.building.structure.classic\",\"aec.building.structure.fem.line\",\"aec.building.structure.fem.solid\",\"aec.building.structure.fem.surface\"],\"statComputers\":[\"structure.stability\"],\"propertyComputers\":[],\"importProfiles\":[{\"modelDefinitionId\":\"aec.building.structure\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.classic\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"preferPresentationLayers\":true,\"presentationGeometry\":\"wireframe\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.fem.line\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.fem.solid\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.fem.surface\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"}],\"transformationAppliers\":[\"aec.building.structure/from_building\"]}",
+          "iconId": "landmark",
+          "label": "AEC Building Structure",
+          "moduleId": "aec-building-structure"
+        },
+        "topic": "cad.computer"
+      }
+    ]
+  },
+  "descriptorVersion": 1,
+  "execution": "declarative",
+  "executionProtocol": {
+    "appChannelVersion": 17
+  },
+  "hashes": {
+    "coreWasmSha256": "1037c771c166c6ddbbaa20deb0b20214c718637c67843b362afa290aca35b87b",
+    "descriptorSha256": "08cab643f43f1e99b4371700e4c88f203d18b6b09d26a827cf63786f30bc5895",
+    "wasmSha256": "cecb7c21cb4d7013ee009b7971b7cefffe0ef8182eb8d099325ebf01e9e8c99a"
+  },
+  "manifest": {
+    "apps": [],
+    "artifactKinds": [],
+    "capabilities": [],
+    "commands": [],
+    "examples": [],
+    "label": "CAD AEC Building Structure",
+    "pluginId": "cad-extension-aec-building-structure",
+    "topicContributions": [
+      {
+        "payload": {
+          "appId": "cad-play",
+          "computersJson": "{\"modelDefinitionIds\":[\"aec.building.structure\",\"aec.building.structure.classic\",\"aec.building.structure.fem.line\",\"aec.building.structure.fem.solid\",\"aec.building.structure.fem.surface\"],\"statComputers\":[\"structure.stability\"],\"propertyComputers\":[],\"importProfiles\":[{\"modelDefinitionId\":\"aec.building.structure\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.classic\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"preferPresentationLayers\":true,\"presentationGeometry\":\"wireframe\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.fem.line\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.fem.solid\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"},{\"modelDefinitionId\":\"aec.building.structure.fem.surface\",\"layerTypology\":{\"beam\":\"structure.structure.reinforcedconcreteinternalwall\",\"beams\":\"structure.structure.reinforcedconcreteinternalwall\",\"column\":\"structure.structure.reinforcedconcretecolumn\",\"columns\":\"structure.structure.reinforcedconcretecolumn\",\"slab\":\"structure.structure.onewayreinforcedconcreteslab\",\"wall\":\"structure.structure.reinforcedconcreteexternalwall\",\"walls\":\"structure.structure.reinforcedconcreteexternalwall\"},\"fallbackTypology\":\"structure.structure.onewayreinforcedconcreteslab\",\"namespacedDomain\":\"structure\"}],\"transformationAppliers\":[\"aec.building.structure/from_building\"]}",
+          "iconId": "landmark",
+          "label": "AEC Building Structure",
+          "moduleId": "aec-building-structure"
+        },
+        "topic": "cad.computer"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "packageId": "",
+  "quotas": {},
+  "role": "extension"
+}

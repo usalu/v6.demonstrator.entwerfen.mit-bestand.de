@@ -1,0 +1,8 @@
+{
+  "schema": "spatial.modelDefinition",
+  "id": "aec.building.energy",
+  "version": "1.0.0",
+  "label": "Building Energy",
+  "description": "Energy analysis model definition assets.",
+  "kinds": ["attribute", "property", "stat", "transformation", "typology"]
+}

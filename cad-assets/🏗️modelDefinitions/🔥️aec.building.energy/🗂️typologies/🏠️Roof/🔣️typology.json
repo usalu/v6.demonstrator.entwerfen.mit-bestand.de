@@ -1,0 +1,22 @@
+{
+  "schema": "spatial.typology",
+  "id": "energy.energy.roof",
+  "version": "1.0.0",
+  "label": "Roof",
+  "description": "Highest external horizontal surface.",
+  "actions": ["energy.energy.constructRoofFrom2PointsAndHeight", "energy.energy.constructRoofFromCurveAndHeight", "energy.energy.constructRoofFromSurface"],
+  "interactions": ["energy.energy.constructRoof"],
+  "primitiveKinds": ["surface"],
+  "style": {
+    "color": "#7A9E6E",
+    "edgeColor": "#4A6342",
+    "opacity": 0.7,
+    "pattern": {
+      "kind": "hatch",
+      "direction": 90,
+      "spacing": 0.36,
+      "lineWidth": 0.028,
+      "color": "#3A5034"
+    }
+  }
+}

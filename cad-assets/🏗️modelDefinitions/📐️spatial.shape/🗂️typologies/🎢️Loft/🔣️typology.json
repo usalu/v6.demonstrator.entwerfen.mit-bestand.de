@@ -1,0 +1,10 @@
+{
+  "schema": "spatial.typology",
+  "id": "spatial.shape.surface.loft",
+  "version": "1.0.0",
+  "label": "Loft",
+  "description": "Typology produced by surface.loft.",
+  "actions": ["command.finish"],
+  "interactions": ["surface.loft"],
+  "primitiveKinds": ["surface"]
+}

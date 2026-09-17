@@ -1,0 +1,15 @@
+{
+  "schema": "spatial.typology",
+  "id": "building.building.door",
+  "version": "1.0.0",
+  "label": "Door",
+  "description": "Operable opening panel.",
+  "primitiveKinds": ["surface"],
+  "style": {
+    "color": "#8B5A2B",
+    "edgeColor": "#5C3C1C",
+    "opacity": 0.82
+  },
+  "actions": ["building.building.placeDoorFrom2PointsAndHeight"],
+  "interactions": ["building.building.placeDoor"]
+}
